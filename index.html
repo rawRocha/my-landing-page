@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My landing page</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="main-bg">
+    <input
+      type="checkbox"
+      id="close-menu"
+      class="close-menu"
+      aria-label="Close menu"
+      role="button"
+    />
+    <label for="close-menu" class="close-menu-label" title="close menu"></label>
+    <aside class="menu white-bg">
+      <div class="main-content menu-content">
+        <a href="#intro"
+          ><h1 onclick="getElementById('close-menu').checked = false">
+            LOGO
+          </h1></a
+        >
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false">
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#top3">Top 3</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <section id="intro" class="intro section main-bg">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>
+            Desenvolvedor Web Júnior apaixonado por criar experiências digitais.
+          </h2>
+
+          <p>
+            Olá! Sou [Seu Nome], desenvolvedor web júnior. Meu objetivo é
+            transformar desafios em soluções práticas para o mundo digital.
+            Tenho experiência em [tecnologias-chave como HTML, CSS, JS,
+            frameworks].
+          </p>
+        </div>
+        <div class="intro-img">
+          <img
+            src="assets/img/undraw_static_assets_rpm6.svg"
+            alt="desenho de um homem a direita segurando a logo do CSS, mulher empurrando a logo do JavaScript ao centro, homem a esquerda segurando a logo do HTML"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="top3" class="section white-bg">
+      <div class="main-content top3-content">
+        <div class="top3-img">
+          <img
+            src="assets/img/undraw_website_5bo8.svg"
+            alt="desenho de um homem a direita segurando a logo do CSS, mulher empurrando a logo do JavaScript ao centro, homem a esquerda segurando a logo do HTML"
+          />
+        </div>
+        <div class="top3-text-content">
+          <h2>top 3 jobs</h2>
+          <h6>Desenvolvimento de Sites Responsivos:</h6>
+          <p>Criação de sites otimizados para desktop, tablet e celular.</p>
+          <h6>Manutenção de Sites:</h6>
+          <p>Correções de bugs, otimizações e atualizações.</p>
+          <h6>Landing Pages Personalizadas:</h6>
+          <p>Design e de senvolvimento de páginas focadas em conversões.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills main-bg section">
+      <div class="main-content skills-content">
+        <h2>Habilidades</h2>
+        <p>
+          Sou apto a trabalhar com diversas tecnologias e ferramentas,
+          incluindo:
+        </p>
+        <br />
+        <div class="skills-grid">
+          <article>
+            <h6>Front-End</h6>
+            <div>
+              <ul>
+                <li>
+                  <strong>HTML5</strong>: Criação de estrutura e conteúdo de
+                  páginas web.
+                </li>
+                <li>
+                  <strong>CSS3</strong>: Estilização avançada com animações,
+                  design responsivo e otimização visual.
+                </li>
+                <li>
+                  <strong>JavaScript</strong>: Adiciono interatividade e
+                  dinamicidade às páginas.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <h6>Back-End</h6>
+            <div>
+              <ul>
+                <li>
+                  <strong>Node.js</strong>: Criação de servidores e APIs
+                  escaláveis.
+                </li>
+                <li><strong>Frameworks Back-End</strong>: Express.</li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <h6>Banco de Dados</h6>
+            <div>
+              <ul>
+                <li>
+                  <strong>MySQL/PostgreSQL</strong>: Modelagem e gestão de dados
+                  relacionais.
+                </li>
+                <li>
+                  <strong>MongoDB</strong>: Gestão de dados não-relacionais.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="intro section white-bg">
+      <div class="main-content intro-content">
+        <div class="contact-text-content">
+          <h2>Vamos criar novas experiências juntos.</h2>
+        </div>
+        <div class="intro-img">
+          <img
+            src="assets/img/undraw_undraw_landing_re_9hm5_-1-_wlfw.svg"
+            alt="desenho de um homem a direita segurando a logo do CSS, mulher empurrando a logo do JavaScript ao centro, homem a esquerda segurando a logo do HTML"
+          />
+        </div>
+
+        <form class="contact-form">
+          <fieldset class="form-grid">
+            <legend>Contact me</legend>
+            <div class="left">
+              <div class="form-group">
+                <label for="nome">First name</label>
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sobrenome">Last name</label>
+                <input
+                  type="text"
+                  name="sobrenome"
+                  id="sobrenome"
+                  placeholder="Your last name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Your email"
+                />
+              </div>
+            </div>
+            <div></div>
+            <div class="form-group full-width">
+              <label for="mensagem">mensagem</label>
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                cols="30"
+                rows="10"
+                placeholder="Your mensagem"
+              ></textarea>
+
+              <div class="form-group full width">
+                <button type="submit">Send mensagem</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <section id="footer" class="section main-bg">
+      <div class="main-content footer-content">
+        <div class="img-logo-social">
+          <a href="https://github.com/rawRocha" target="_blank" class="link">
+            <img
+              src="/assets/img/instagram-svgrepo-com.svg"
+              alt="Logo escura do Instagram, é uma câmera."
+            />
+          </a>
+
+          <a href="https://github.com/rawRocha" target="_blank" class="link">
+            <img
+              src="/assets/img/github-142-svgrepo-com.svg"
+              alt="Logo escura do GitHub, é um gato polvo."
+            />
+          </a>
+
+          <a href="https://github.com/rawRocha" target="_blank" class="link">
+            <img
+              src="/assets/img/internet-linkedln-media-svgrepo-com.svg"
+              alt="Logo escura do Linkedln"
+            />
+          </a>
+        </div>
+        <div class="footer-text-content">
+          <ul>
+            <li>Info</li>
+            <li>Support</li>
+            <li>Marketing</li>
+            <li>Terms of use</li>
+            <li>Privacy</li>
+          </ul>
+
+          <p>@2024 Rawlinson Junior</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/formDataSubmit.js"></script>
+    <script src="./assets/js/tawk.js"></script>
+  </body>
+</html>

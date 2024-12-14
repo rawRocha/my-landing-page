@@ -1,0 +1,514 @@
+:root {
+  --primary-color: #0a1128;
+  --secondary-color: crimson;
+  --white-color: #fff;
+  --light-grey-color: rgb(187, 187, 187);
+  --gap: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: o;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* para trabalhar com rem e valores relativos. */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem; /* vale 16px */
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase; /* letra maiuscula */
+}
+h2 {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 5rem;
+}
+h4 {
+  font-size: 4.5rem;
+}
+h5 {
+  font-size: 4rem;
+}
+h6 {
+  font-size: 3.5rem;
+}
+
+.main-bg {
+  background-image: url("../img/endless-constellation.svg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+  min-height: 100vh;
+}
+
+.white-bg {
+  background: white;
+  color: var(--primary-color);
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.intro-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  min-height: 100vh;
+  margin-top: 3rem;
+}
+
+.intro-text-content,
+.intro-img {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.intro-text-content h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.intro-img img {
+  max-width: 100%;
+  min-height: auto;
+}
+
+.top3-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  min-height: 100vh;
+}
+
+.top3-text-content {
+  max-width: 64rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  gap: var(--gap);
+}
+
+.top3-content h6 {
+  font-size: 2rem;
+}
+
+.top3-img img {
+  max-width: 100%;
+  min-height: auto;
+  margin-top: 15rem;
+}
+
+.skills-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.skills-content h6 {
+  font-size: 3rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.skills-grid ul li {
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.contact-form {
+  grid-column: span 2;
+}
+
+.contact-form .form-grid {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.contact-text-content {
+  margin-top: 6.5rem;
+}
+
+.contact-form {
+  grid-column: span 2;
+}
+
+.contact-form .form-grid {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.form-grid legend {
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.form-group {
+  flex: 1 1 320px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid var(--light-grey-color);
+  background: var(--white-color);
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  font-size: 2.5rem;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 10px 2px var(--light-grey-color);
+}
+
+.form-group button {
+  border: 1px solid var(--light-grey-color);
+  background: none;
+  color: var(--primary-color);
+  padding: 1.5rem 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  margin-top: 3.5rem;
+}
+
+.form-group button:hover {
+  background: var(--white-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 5px 2px var(--light-grey-color);
+}
+
+.form-group ::placeholder {
+  color: var(--light-gray-color);
+}
+
+.footer-content {
+  max-width: 45rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.img-logo-social {
+  position: relative;
+  display: flex;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+  justify-content: center;
+}
+
+.img-logo-social a img {
+  width: 5rem; /* Define largura das imagens */
+  height: auto; /* Mantém a proporção */
+  cursor: pointer; /* Adiciona o efeito do ponteiro */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza transformações */
+}
+
+/* Adiciona efeitos ao passar o mouse */
+.img-logo-social a img:hover {
+  transform: scale(1.1); /* Amplia levemente a imagem */
+  opacity: 0.8; /* Reduz a opacidade a 80% */
+}
+
+.footer-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer-content ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.footer-content p {
+  color: var(--light-grey-color);
+  margin-top: 10rem;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 0.1rem solid var(--light-grey-color);
+  z-index: 1;
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.menu h1 {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+}
+
+.menu h1 a {
+  color: inherit;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 2rem;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 0;
+  min-height: 0.2rem;
+  background: var(--secondary-color);
+  transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+  width: 50%;
+  left: 25%;
+}
+
+.close-menu {
+  display: none;
+}
+
+/* BREAKPOINTS */
+
+/* Telas menores que 768px (tablets e smartphones em modo paisagem) */
+@media (max-width: 768px) {
+  :root {
+    --gap: 2rem; /* Reduz o espaçamento */
+  }
+
+  html {
+    font-size: 56.25%; /* Ajusta para tamanhos menores (1rem = 9px) */
+  }
+
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 3.5rem;
+  }
+
+  h5 {
+    font-size: 3rem;
+  }
+
+  h6 {
+    font-size: 2.5rem;
+  }
+
+  .intro-content,
+  .top3-content {
+    display: flex;
+    flex-direction: column; /* Ajusta o layout */
+    gap: var(--gap);
+  }
+
+  .top3-text-content {
+    text-align: center; /* Centralização reduzida para usabilidade */
+    margin: auto; /* Ajusta margens */
+  }
+
+  .top3-img img {
+    max-width: 100%;
+    min-height: auto;
+    margin-top: 5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas no grid */
+  }
+
+  .menu {
+    bottom: 0;
+    text-align: center;
+  }
+
+  .menu h1 {
+    font-size: 200%;
+    margin-bottom: 25%;
+  }
+
+  .menu ul li a {
+    font-size: 200%;
+    padding: 150%;
+  }
+
+  .menu-content,
+  .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu-content {
+    height: 100vh;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .close-menu-label::after {
+    content: "☰";
+    position: fixed;
+    z-index: 2;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  /* × */
+
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
+
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "×";
+  }
+
+  .menu ul li a {
+    padding: 1rem; /* Reduz o espaçamento */
+  }
+}
+
+/* Telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+  :root {
+    --gap: 1.5rem;
+  }
+
+  html {
+    font-size: 50%; /* 1rem = 8px */
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .intro-content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-text-content h2 {
+    font-size: 3rem; /* Ajusta o título para caber em telas menores */
+  }
+
+  .intro-content,
+  .top3-content {
+    gap: var(--gap); /* Ajusta os gaps */
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr; /* Coluna única para dispositivos menores */
+  }
+
+  .contact-form .form-grid {
+    flex-direction: column; /* Campos empilhados no formulário */
+    gap: var(--gap);
+  }
+
+  .menu-content {
+    flex-direction: column; /* Menu ajustado verticalmente */
+    gap: 1rem;
+  }
+}
