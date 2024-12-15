@@ -88,7 +88,7 @@ h6 {
   grid-template-columns: 1fr 1fr;
   gap: var(--gap);
   min-height: 100vh;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .intro-text-content,
